@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 4, 2015, 1:23:36 PM
+    Author     : panzer
+*/
+
+body,html{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    
+}
+header{
+    background-color: black;
+    height: 50px;
+    color:white;
+        
+
+    
+}
+header #logo{
+    margin-left: 25px;
+    display: inline-block;
+}
+
+header span{
+      padding:0px;
+      display: inline-block;
+      line-height: 50px;
+
+}
+header a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 25px;
+    margin-right:25px;
+
+    height: 50px;
+    text-decoration: none;
+    color:white;
+
+}
+#panzer{
+    font-weight: bold;
+}
+
+
+
+
+
+header span{
+    font-size: 25px;
+    height: 50px;
+   
+}
+
+
+header span:hover * {
+    background-color: white;
+    color:black;
+    
+}
+
+
+
+
+.photoviewer {
+    background-color: blue;
+    
+    width: 1200px;
+    
+}
+.book{
+    background-color:white;
+    margin-left: 25px;
+    margin-right:  25px;
+    margin-top:25px;
+    overflow: hidden;
+}
+.book .chapter{
+    padding-left:25px;
+}
+.book .chapter-name{
+    font-size: xx-large;
+}
+.photoviewer{
+    background-color: black;
+    color:white;
+    overflow: auto;
+    
+}
+.photoviewer-description {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.photoviewer-photo {
+float:right;
+
+}
+
