@@ -1,0 +1,20 @@
+.photoJSviewer{
+	background-color:black;
+}
+.photoJSCaption{
+	height:50px;
+	color:white;
+        width:100%;
+	font-size:25px;
+	line-height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	display:block;
+}
+.photoJSPhotoholder{
+	display:block;
+}
+.photoJSPhotoholder img{
+	padding: 1px;
+}

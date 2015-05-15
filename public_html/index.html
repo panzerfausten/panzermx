@@ -6,14 +6,16 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <link  rel="stylesheet" href="css/style.css" type="text/css"/>
         <title>Panzer</title>
         <link rel="icon" 
       type="image/png" 
       href="img/favicon.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link  rel="stylesheet" href="css/style.css" type="text/css"/>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/photoJS.css">
+ 	<script type="text/javascript" src="js/libs/photoJS.js"></script>
     </head>
     <body>
         <header id="upbar">
@@ -30,10 +32,7 @@ and open the template in the editor.
             <div class="chapter" >
                 <p class="chapter-name">Panzer</p>
                 <p> Hey, i am Darien Miranda, (or panzer).
-                    <br>
-                   
-                                    <div class='photoviewer' style="width:75%  ;margin-left: auto; margin-right: auto;"><div class='photoviewer-description' style="height:180px; width: 600px; line-height: 180px;float:left">That's me!</div><span class='photoviewer-photo' > <img src="img/me_chilling.jpg" width="320" height="180" alt="me_chilling" /></span></div>
-
+ 			<div id="photo_me" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
                     
                 <p style="clear:both">Software engineer and Computer Scientist. I don't know why you are here, but that's great. Kill some time reading some of my stuff.</p>
                 Why panzer?
@@ -47,16 +46,17 @@ and open the template in the editor.
                 <p class="chapter-name">Work</p>
                     <p>I worked in some places like <a href="http://sisl.disi.unitn.it/">University of Trento</a> in Italy as a research assistant writing android apps and python libraries.</p>
                     
-                    <div class='photoviewer' style="width:1000px; margin-left: auto; margin-right: auto;"><div class='photoviewer-description' style="height:180px; width: 1000px; line-height: 200px;float:left">Yeah, pretty nice town.</div><span class='photoviewer-photo' > <img src="img/Trento-panorama_Povo.jpg" height="500"  /> </span></div>
+ 		    <div id="photo_trento" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
                                         <p>Then i worked as a Teacher at <a href="http://www.uaim.mx/">Uaim</a> back in Mexico.</p>
 
                     
                     <p></p>
-                    <div class='photoviewer' style="width:1000px; margin-left: auto; margin-right: auto;" style="width:1000px"><div class='photoviewer-description' style="height:180px; width: 1000px; line-height: 200px;float:left">Bricks!</div><span class='photoviewer-photo' ><img src="img/uaim.png" width="1000" height="600" alt="uaim"/> </span></div>
+ 		    <div id="photo_uaim" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
 
                         
                     <p>I am now Master student  Computer science at  <a href="http://www.cicese.edu.mx/">CICESE</a></p>
 
+ 		    <div id="photo_cicese" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
                     I am working on anxiety detection trough wearable computing. You can read my paper on it here: <a href="files/p34-Miranda.pdf">Anxiety detection using wearable computing</a>
                     <p>Done already?. Well, now i am taking a machine learning approach using some more sophisticated hardware</p>
 
@@ -72,8 +72,8 @@ and open the template in the editor.
                 
 
                     
+ 		    <div id="photo_captain" class="photoJSviewer" style="height: 450px; width: 350px;"> </div>
                 
-                <div class='photoviewer' style="margin-left: auto; margin-right: auto;"><div class='photoviewer-description' style="height:509px; width: 800px; line-height: 509px;float:left">I always wanted to be a pirate</div><span class='photoviewer-photo' ><img src="img/captain_me.jpg" width="339" height="509" alt="captain_me"/></span></div>
             </div>
             <a name="contact"></a>
 
@@ -92,6 +92,12 @@ and open the template in the editor.
             <p id="credits">Darien Miranda 2015.</p>
         </footer>
         </div>
-       
+	<script>
+		initPhotoJS("photo_me","img/me_chilling.jpg","That's me!");
+		initPhotoJS("photo_trento","img/Trento-panorama_Povo.jpg","Yeah, pretty nice town.");
+		initPhotoJS("photo_uaim","img/uaim.png","Bricks!");
+		initPhotoJS("photo_captain","img/captain_me.jpg","I always wanted to be a pirate");
+		initPhotoJS("photo_cicese","img/cicese_glass.jpg","Love the view!");
+  	</script>     
     </body>
 </html>
