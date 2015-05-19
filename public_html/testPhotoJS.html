@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Panzer</title>
+        <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link  rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/photoJS.css">
+        <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+
+ 	<script type="text/javascript" src="js/libs/photoJS.js"></script>
+    </head>
+    <body>
+        <header id="upbar">
+            
+            <span><a id="panzer" href="#panzer">Panzer</a></span>
+            <span><a href="#work">Work</a></span>
+            <span><a href="#places">Places</a></span>
+            <span><a href="#media">Media</a></span>
+            <span><a href="#contact">Contact</a></span>
+        </header>
+       
+        <div class="book">
+            <a name="panzer"></a>
+            <div class="chapter" >
+                <p class="chapter-name">Panzer</p>
+                <p> Hey, i am Darien Miranda, (or panzer).
+ 			<div id="photo_me" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+                    
+                
+            </div>
+            <a name="work"></a>
+
+        <footer>
+            <p id="credits">Darien Miranda 2015.</p>
+        </footer>
+        </div>
+	<script>
+		var photos_me = { photos:[{ caption:"That's me!", url:"img/me_chilling.jpg"},{caption:"Yeah, pretty nice town.",url:"img/Trento-panorama_Povo.jpg"}]};
+                
+		PhotoJSViewer("photo_me",photos_me);
+		
+  	</script>     
+    </body>
+</html>

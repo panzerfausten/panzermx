@@ -8,60 +8,63 @@ and open the template in the editor.
     <head>
         <title>Panzer</title>
         <link rel="icon" 
-      type="image/png" 
-      href="img/favicon.png">
+              type="image/png" 
+              href="img/favicon.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link  rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link  rel="stylesheet" href="css/style.css" type="text/css"/>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/photoJS.css">
- 	<script type="text/javascript" src="js/libs/photoJS.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/photoJS.css">
+        <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+
+        <script type="text/javascript" src="js/libs/photoJS.js"></script>
+
     </head>
     <body>
         <header id="upbar">
-            
+
             <span><a id="panzer" href="#panzer">Panzer</a></span>
             <span><a href="#work">Work</a></span>
             <span><a href="#places">Places</a></span>
             <span><a href="#media">Media</a></span>
             <span><a href="#contact">Contact</a></span>
         </header>
-       
+
         <div class="book">
             <a name="panzer"></a>
             <div class="chapter" >
                 <p class="chapter-name">Panzer</p>
                 <p> Hey, i am Darien Miranda, (or panzer).
- 			<div id="photo_me" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
-                    
+                <div id="photo_me" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+
                 <p style="clear:both">Software engineer and Computer Scientist. I don't know why you are here, but that's great. Kill some time reading some of my stuff.</p>
                 Why panzer?
                 <p>Well, when i was young i played Medal of honor. I loved the "panzerfaust" weapon. I used it as my nickname on the <strong>internetz</strong>: "panzerfausten" but it was too late when i noticed the typo.
-                Now is part of my personality. Something aggressive but well measured. 
+                    Now is part of my personality. Something aggressive but well measured. 
             </div>
             <a name="work"></a>
 
             <div class="chapter">
 
                 <p class="chapter-name">Work</p>
-                    <p>I worked in some places like <a href="http://sisl.disi.unitn.it/">University of Trento</a> in Italy as a research assistant writing android apps and python libraries.</p>
-                    
- 		    <div id="photo_trento" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
-                                        <p>Then i worked as a Teacher at <a href="http://www.uaim.mx/">Uaim</a> back in Mexico.</p>
+                <p>I worked in some places like <a href="http://sisl.disi.unitn.it/">University of Trento</a> in Italy as a research assistant writing android apps and python libraries.</p>
 
-                    
-                    <p></p>
- 		    <div id="photo_uaim" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+                <div id="photo_trento" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+                <p>Then i worked as a Teacher at <a href="http://www.uaim.mx/">Uaim</a> back in Mexico.</p>
 
-                        
-                    <p>I am now Master student  Computer science at  <a href="http://www.cicese.edu.mx/">CICESE</a></p>
 
- 		    <div id="photo_cicese" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
-                    I am working on anxiety detection trough wearable computing. You can read my paper on it here: <a href="files/p34-Miranda.pdf">Anxiety detection using wearable computing</a>
-                    <p>Done already?. Well, now i am taking a machine learning approach using some more sophisticated hardware</p>
+                <p></p>
+                <div id="photo_uaim" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
 
-                    
-                    If you are interested on some of my work. Please feel free to contact me.
+
+                <p>I am now Master student  Computer science at  <a href="http://www.cicese.edu.mx/">CICESE</a></p>
+
+                <div id="photo_cicese" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+                I am working on anxiety detection trough wearable computing. You can read my paper on it here: <a href="files/p34-Miranda.pdf">Anxiety detection using wearable computing</a>
+                <p>Done already?. Well, now i am taking a machine learning approach using some more sophisticated hardware</p>
+
+
+                If you are interested on some of my work. Please feel free to contact me.
             </div>
             <a name="places"></a>
             <div class="chapter"> <p class="chapter-name">Places</p>
@@ -69,35 +72,48 @@ and open the template in the editor.
 
             <a name="media"></a>
             <div class="chapter"> <p class="chapter-name">Media</p>
-                
 
-                    
- 		    <div id="photo_captain" class="photoJSviewer" style="height: 450px; width: 350px;"> </div>
-                
+
+                One of my hobbies is listening music. These are the latest albums i liked.
+                <div id="photos_albums2015" class="photoJSviewer" style="height: 450px; width: 450px;"> </div>
+
             </div>
             <a name="contact"></a>
 
             <div class="chapter"><p class="chapter-name"> Contact</p>
-            
+
                 I prefer the classic e-mail method: <a href="mailto:panzerfausten@gmail.com">panzerfausten@gmail.com</a>.<br>
                 But if you really want to contact me by other ways you can go to my facebook page <a href="https://www.facebook.com/darien.miranda/">https://www.facebook.com/darien.miranda/</a>.<br>
                 And that's pretty much it.
                 <br/>
-                
 
-                    
+
+
             </div>
-                            <br>
-        <footer>
-            <p id="credits">Darien Miranda 2015.</p>
-        </footer>
+            <br>
+            <footer>
+                <p id="credits">Darien Miranda 2015.</p>
+            </footer>
         </div>
-	<script>
-		initPhotoJS("photo_me","img/me_chilling.jpg","That's me!");
-		initPhotoJS("photo_trento","img/Trento-panorama_Povo.jpg","Yeah, pretty nice town.");
-		initPhotoJS("photo_uaim","img/uaim.png","Bricks!");
-		initPhotoJS("photo_captain","img/captain_me.jpg","I always wanted to be a pirate");
-		initPhotoJS("photo_cicese","img/cicese_glass.jpg","Love the view!");
-  	</script>     
+        <script>
+            var photos_me = {photos: [{caption: "That's me!", url: "img/me_chilling.jpg"}, {caption: "Yeah, pretty nice town.", url: "img/Trento-panorama_Povo.jpg"}]};
+
+            PhotoJSViewer("photo_me", {photos: [{caption: "That's me!", url: "img/me_chilling.jpg"}]});
+            PhotoJSViewer("photo_trento", {photos: [{caption: "Yeah, pretty nice town.", url: "img/Trento-panorama_Povo.jpg"}]});
+            PhotoJSViewer("photo_uaim", {photos: [{caption: "Bricks!", url: "img/uaim.png"}]});
+            //PhotoJSViewer("photo_captain", {photos: [{caption: "I always wanted to be a pirate", url: "img/captain_me.jpg"}]});
+            PhotoJSViewer("photo_cicese", {photos: [{caption: "Love the view!", url: "img/cicese_glass.jpg"}]});
+
+            
+            var albums2015 = { photos:[
+                    {caption:"Strangers to Ourselves",url:"img/albums/strangers_to_ourselves.jpg"},
+                    {caption:"Why make sense?",url:"img/albums/why_make_sense.png"},
+                    {caption:"Vagabonds",url:"img/albums/vagabonds.jpg"},
+                    {caption:"Strange desire",url:"img/albums/strange_desire.jpg"},
+                    
+            ]}
+            PhotoJSViewer("photos_albums2015", albums2015);
+
+        </script>     
     </body>
 </html>

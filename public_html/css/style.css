@@ -23,7 +23,7 @@ header{
     width: 100%;
     position: fixed;
     margin-top: -25px;
-    
+    z-index: 2;
     
 }
 header #logo{

@@ -1,20 +1,68 @@
 .photoJSviewer{
-	background-color:black;
+    background-color:black;
+    position:relative;
+    z-index: 1;
+
 }
 .photoJSCaption{
-	height:50px;
-	color:white;
-        width:100%;
-	font-size:25px;
-	line-height:50px;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:center;
-	display:block;
+    height:50px;
+    color:white;
+    width:100%;
+    font-size:25px;
+    line-height:50px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    display:block;
 }
 .photoJSPhotoholder{
-	display:block;
+    display:block;
 }
 .photoJSPhotoholder img{
-	padding: 1px;
+    padding: 1px;
+}
+#photoJSButtonL{
+    background-color: white;
+    position: absolute;
+    color:black;
+    top:calc(50% - 25px);
+    -moz-opacity: 0.6; 
+    width:25px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#photoJSButtonL:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+#photoJSButtonR{
+    background-color: white;
+    position: absolute;
+    color:black;
+    top:calc(50% - 25px);
+    width: 25px;
+    right:0;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#photoJSButtonR:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
 }
