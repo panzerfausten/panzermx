@@ -32,7 +32,7 @@ function PhotoJSViewer(_divID, _photosJSON) {
                     this._h - 50, photosJSON[photoNumber + 1].caption);
             _photoviewerCaption.innerHTML = photosJSON[photoNumber + 1].caption;
             parent.setAttribute("photo_number", photoNumber + 1);
-
+            
         }
 
     }
