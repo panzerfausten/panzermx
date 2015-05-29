@@ -50,6 +50,7 @@ function PhotoJSViewer(_divID, _photosJSON) {
         if (photoNumber > 0) {
             this._w = parent.clientWidth;
             this._h = parent.clientHeight;
+
             _photoviewerHolder.innerHTML = getImgString(photosJSON[photoNumber - 1].url, this._w - 2,
                     this._h - 50, photosJSON[photoNumber - 1].caption);
             _photoviewerCaption.innerHTML = photosJSON[photoNumber - 1].caption;
@@ -76,8 +77,9 @@ function PhotoJSViewer(_divID, _photosJSON) {
 
 
         this._caption = this._photosJSON.photos[0].caption;
-        this._photoviewerHolder.innerHTML = getImgString(this._photosJSON.photos[0].url, _w - 2,
-                _h - 50, this._caption);
+        
+        this._photoviewerHolder.innerHTML = getImgString(this._photosJSON.photos[0].url, this._w -2,
+                this._h - 50, this._caption);
         this._photoviewerCaption.innerHTML = this._caption;
         if (this._photosJSON.photos.length > 1) { //add controls for multiphotos
             this._photoviewerDiv.innerHTML += _buttons;

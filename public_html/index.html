@@ -11,8 +11,12 @@ and open the template in the editor.
               type="image/png" 
               href="img/favicon.png">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link  rel="stylesheet" href="css/style.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+     
+
+        <link rel="stylesheet" media="only screen and (min-device-width: 1280px)" type="text/css" href="css/style.css"> 
+        <link rel="stylesheet" media="only screen and (max-device-width: 1219px)" type="text/css" href="css/mobile.css"> 
+        
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/photoJS.css">
         <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
@@ -35,7 +39,7 @@ and open the template in the editor.
             <div class="chapter" >
                 <p class="chapter-name">Panzer</p>
                 <p> Hey, i am Darien Miranda, (or panzer).
-                <div id="photo_me" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+                <div id="photo_me" class="photoJSviewer" > </div>
 
                 <p style="clear:both">Software engineer and Computer Scientist. I don't know why you are here, but that's great. Kill some time reading some of my stuff.</p>
                 Why panzer?
@@ -52,21 +56,24 @@ and open the template in the editor.
                 <p class="chapter-name">Work</p>
                 <p>I worked in some places like <a href="http://sisl.disi.unitn.it/">University of Trento</a> in Italy as a research assistant writing android apps and python libraries.</p>
 
-                <div id="photo_trento" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+                <div id="photo_trento" class="photoJSviewer" > </div>
                 <p>Then i worked as a Teacher at <a href="http://www.uaim.mx/">Uaim</a> back in Mexico.</p>
 
 
                 <p></p>
-                <div id="photo_uaim" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+                <div id="photo_uaim" class="photoJSviewer" > </div>
 
 
                 <p>I am now Master student  Computer science at  <a href="http://www.cicese.edu.mx/">CICESE</a></p>
 
-                <div id="photo_cicese" class="photoJSviewer" style="height: 250px; width: 400px;"> </div>
+                <div id="photo_cicese" class="photoJSviewer" > </div>
                 I am working on anxiety detection trough wearable computing. You can read my paper on it here: <a href="files/p34-Miranda.pdf">Anxiety detection using wearable computing</a>
+                
                 <p>Done already?. Well, now i am taking a machine learning approach using some more sophisticated hardware</p>
 
-
+                <div id="photo_sokolabs" class="photoJSviewer" style="height:400px"> </div>
+                I also work as a Senior Developer at <a href="http://www.sokolabs.com/">Sokolabs</a>
+                <p>
                 If you are interested on some of my work. Please feel free to contact me.
             </div>
         </div>            
@@ -87,7 +94,7 @@ and open the template in the editor.
 
 
                 One of my hobbies is listening music. These are the latest albums i liked.
-                <div id="photos_albums2015" class="photoJSviewer" style="height: 450px; width: 450px;"> </div>
+                <div id="photos_albums2015" class="photoJSviewer" > </div>
 
             </div>
         </div>
@@ -114,7 +121,7 @@ and open the template in the editor.
 
         <br>
         <footer>
-            <p id="credits">Darien Miranda 2015.</p>
+            <p id="credits">Style crafted with Vim and Netbeans by Darien Miranda 2015.</p>
         </footer>
     
     <script>
@@ -125,6 +132,7 @@ and open the template in the editor.
         PhotoJSViewer("photo_uaim", {photos: [{caption: "Bricks!", url: "img/uaim.png"}]});
         //PhotoJSViewer("photo_captain", {photos: [{caption: "I always wanted to be a pirate", url: "img/captain_me.jpg"}]});
         PhotoJSViewer("photo_cicese", {photos: [{caption: "Love the view!", url: "img/cicese_glass.jpg"}]});
+        PhotoJSViewer("photo_sokolabs", {photos: [{caption: "That's my avatar at soko", url: "img/darien.jpg"}]});
 
 
         var albums2015 = {photos: [
